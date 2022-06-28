@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.authors="blaataap"
 ADD remove-files.sh /root/remove-files.sh
 
 # Give execution rights on the cron scripts
-RUN chmod 0644 /root/remove-files.sh
+RUN chmod 0744 /root/remove-files.sh
 
 #Install Cron
 RUN apt-get update && apt-get install -y cron \
