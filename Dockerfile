@@ -2,8 +2,6 @@
 FROM ubuntu:latest
 LABEL org.opencontainers.image.authors="blaataap"
 
-RUN mkdir -p /home/avr/sender/input
-
 # Add the script to the Docker Image
 ADD remove-files.sh /root/remove-files.sh
 ADD remove-files-completely.sh /root/remove-files-completely.sh
