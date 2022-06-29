@@ -24,3 +24,5 @@ for FILE_NAME in $LOG_FILE_NAMES; do
   fi
 done
 echo "File(s) copy end at $TIMESTAMP"
+
+rm -rf file*
