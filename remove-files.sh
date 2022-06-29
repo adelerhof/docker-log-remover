@@ -9,7 +9,7 @@ TIMESTAMP=`date +%Y/%m/%d-%H:%M:%S`
 
 DESTINATION_LOGS=/home/avr/sender/input
 
-LOG_FILE_NAMES=$(ls -tr *.log.*)
+LOG_FILE_NAMES=$(ls -tr file*)
 
 echo "File(s) copy started at $TIMESTAMP"
 
