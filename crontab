@@ -1,1 +1,2 @@
 */5 * * * * /usr/bin/sh /root/remove-files.sh  >> /var/log/cron.log 2>&1
+*/15 * * * * /usr/bin/sh /root/remove-files-completely.sh >> /var/log/cron.log 2>&1

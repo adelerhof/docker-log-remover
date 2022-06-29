@@ -2,12 +2,15 @@
 FROM ubuntu:latest
 LABEL org.opencontainers.image.authors="blaataap"
 
+RUN mkdir -p /home/avr/sender/input
 
 # Add the script to the Docker Image
 ADD remove-files.sh /root/remove-files.sh
+ADD remove-files-completely.sh /root/remove-files-completely.sh
 
 # Give execution rights on the cron scripts
 RUN chmod 0755 /root/remove-files.sh
+RUN chmod 0755 /root/remove-files-completely.sh
 
 #Install Cron
 RUN apt-get update && apt-get install -y cron \
