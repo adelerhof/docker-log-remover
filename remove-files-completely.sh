@@ -8,6 +8,6 @@ DESTINATION_LOGS=/home/avr/sender/input
 
 echo "File(s) delete started at $TIMESTAMP"
 
-cd ${DESTINATION_LOGS}"
+cd ${DESTINATION_LOGS}
 rm -rf file*
 echo "Files(s) delete end at $TIMESTAMP"
